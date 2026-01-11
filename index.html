@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/png" href="./images/uni/window_icon_2.png"> 
+  <title>Doki Doki Web Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="game">
+    <!-- startup screen 1 2 3.. 4? -->
+    <div id="startup-overlay">
+      <div id="startup-content">
+        <div id="startup-text"></div>
+        <img id="startup-logo" src="" alt="" style="display: none;" />
+      </div>
+      <div id="menu-screen" style="display: none;">
+        <div id="menu-bg"></div>
+        <img id="menu-art" src="./images/uni/main_menu.png" alt="" />
+        <img id="menu-char-n" class="menu-char" src="./images/uni/menu_art_n.png" alt="Natsuki" />
+        <img id="menu-char-s" class="menu-char" src="./images/uni/menu_art_s.png" alt="Sayori" />
+        <img id="menu-char-y" class="menu-char" src="./images/uni/menu_art_y.png" alt="Yuri" />
+        <img id="menu-char-m" class="menu-char" src="./images/uni/menu_art_m.png" alt="Monika" />
+        <img id="window-icon" src="./images/uni/window_icon_2.png" alt="" />
+        <button id="btn-start-game">New Game</button>
+      </div>
+    </div>
+
+    <!-- name entry -->
+    <div id="name-entry-overlay" style="display: none;">
+      <div id="name-entry-box">
+        <div class="name-prompt">Please enter your name</div>
+        <input type="text" id="player-name-input" maxlength="12" autocomplete="off" />
+        <button id="btn-name-ok">OK</button>
+      </div>
+    </div>
+
+    <img id="bg" src="./images/backgrounds/Residential.webp" alt="Background" />
+    <img id="character" src="./images/characters/sayori/Say1.webp" />
+    <img id="textbox" src="./images/gui/textbox.png" alt="Textbox" />
+    <div id="dialogue-layer">
+      <div id="name-wrap">
+        <img id="namebox" src="./images/gui/namebox.png" alt="Namebox" />
+        <div id="name">Sayori</div>
+      </div>
+      <div id="text"></div>
+    </div>
+
+    <!-- controls -->
+    <div id="controls" aria-label="game controls">
+      <button class="square-btn" id="btn-history" data-action="history" aria-label="Open history">History</button>
+      <button class="square-btn" id="btn-skip" data-action="skip" aria-label="Skip text">Skip</button>
+      <button class="square-btn" id="btn-auto" data-action="auto" aria-pressed="false" aria-label="Toggle auto-advance">Auto</button>
+      <button class="square-btn" id="btn-save" data-action="save" aria-label="Save game">Save</button>
+      <button class="square-btn" id="btn-load" data-action="load" aria-label="Load game">Load</button>
+      <button class="square-btn" id="btn-settings" data-action="settings" aria-label="Open settings">Settings</button>
+    </div>
+
+    
+    <div id="triangle-control" aria-hidden="false">
+      <button class="triangle-btn" id="btn-triangle" data-action="triangle" aria-label="Triangle">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" shape-rendering="geometricPrecision">
+          <polygon points="5,3 5,21 21,12" fill="#fff" stroke="#fff" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- transition overlay -->
+    <div id="transition-overlay"></div>
+  </div>
+
+  <script src="./story/act1/scene1.js"></script>
+  <script src="./story/act1/scene2.js"></script>
+  <script src="./scripts/character-map.js"></script>
+  <script src="./scripts/disable-devtool.js"></script>
+  <script src="./scripts/fix-game.js"></script>
+  <script src="./scripts/functions/expressions.js"></script>
+  <script src="./scripts/functions/anim.js"></script>
+  <script src="./scripts/audio.js"></script>
+  <script src="./scripts/text.js"></script>
+  <script src="./scripts/startup.js"></script>
+  <script src="./scripts/name-entry.js"></script>
+  <script src="./scripts/controls.js"></script>
+  <script src="./scripts/game.js"></script>
+</body>
+</html>
