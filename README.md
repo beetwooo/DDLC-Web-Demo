@@ -15,6 +15,6 @@ No. This is a fan-made project and is not developed by, affiliated with any offi
 Yes. You are free to use and modify from the code for personal or educational purposes.
 
 ### Question 3: Where is the game?
-https://beetwooo.github.io/DDLC-WebDemo
+https://beetwooo.github.io/DDLC-Web-Demo
 
 
