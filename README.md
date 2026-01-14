@@ -17,4 +17,4 @@ Yes. You are free to use and modify from the code for personal or educational pu
 ### Question 3: Where is the game?
 https://beetwooo.github.io/DDLC-Web-Demo
 
-
+More of the game is coming soon!
