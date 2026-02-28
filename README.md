@@ -3,7 +3,7 @@
 
 # Doki Doki Literature Club! Web Demo 
 
-This is a fan made project and  is not an official game. It is not affiliated with, or associated with Team Salvato. All original images and ideas belong to their respective owners.
+This is a fan made project and  is not an official game. We are not affiliated with, or associated with Team Salvato. All original images and ideas belong to their respective owners.
 
 This game has been developed solely for educational purposes. No copyright infringement is intended, and this project is not designed to replace, compete with, or represent the original work.
 ## FAQs
